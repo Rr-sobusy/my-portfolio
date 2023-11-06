@@ -1,27 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+&:root{
+  --bg-primary : #121212;
+  --gradient-from: #CB69C1;
+  --gradient-to: #6C72CB
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--bg-primary);
+}
+
+li {
+  @apply relative cursor-pointer text-slate-200 font-poppins text-lg tracking-[3px] font-extralight
+}
+
+li::after {
+  @apply absolute content-[''] -bottom-2 left-0 rounded-xl bg-gradient-to-r from-[#CB69C1] to-[#6C72CB] h-[3px] w-0 duration-500
+}
+
+li:hover::after {
+  @apply w-full
+}
+
+.__gradient-text {
+  @apply bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] bg-clip-text text-transparent
 }
