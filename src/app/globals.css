@@ -15,15 +15,15 @@ body {
   background-color: var(--bg-primary);
 }
 
-li {
+.__header-navs {
   @apply relative cursor-pointer text-slate-200 font-poppins text-lg tracking-[3px] font-extralight
 }
 
-li::after {
+.__header-navs::after {
   @apply absolute content-[''] -bottom-2 left-0 rounded-xl bg-gradient-to-r from-[#CB69C1] to-[#6C72CB] h-[3px] w-0 duration-500
 }
 
-li:hover::after {
+.__header-navs::after:hover {
   @apply w-full
 }
 

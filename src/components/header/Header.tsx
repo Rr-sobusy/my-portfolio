@@ -36,10 +36,10 @@ const Header = (props: Props) => {
         <ul
           className={`gap-7 mr-2 text-white hidden md:flex text-xl font-semibold`}
         >
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>About</li>
+          <li className="__header-navs">Home</li>
+          <li className="__header-navs">About</li>
+          <li className="__header-navs">Projects</li>
+          <li className="__header-navs">About</li>
         </ul>
         <HiMenuAlt1
           color="white"

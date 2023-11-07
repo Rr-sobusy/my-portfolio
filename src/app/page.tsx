@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="mt-[80px] mx-[4rem]">
+      <main className="mt-[80px] mx-0 lg:mx-[4rem]">
         <Hero />
       </main>
     </>
