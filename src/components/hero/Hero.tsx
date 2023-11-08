@@ -11,8 +11,8 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <section className="flex flex-col lg:flex-row">
-      <div className="flex flex-col flex-1 mt-[4.5rem]">
-        <h1 className="lg:text-6xl text-4xl text-slate-200 mt-[3.5rem] font-poppins font-semibold leading-snug tracking-wider max-w-full lg:max-w-[650px]">
+      <div className="flex flex-col justify-center flex-1 mt-[4.5rem]">
+        <h1 className="lg:text-6xl -mt-[5rem] text-4xl text-slate-200 font-poppins font-semibold leading-snug tracking-wider max-w-full lg:max-w-[650px]">
           Hi I'm Rex Randy, an&nbsp;
           <span className="leading-snug tracking-wider __gradient-text">
             aspiring
@@ -25,7 +25,7 @@ const Hero = (props: Props) => {
             repeat={Infinity}
           />
         </h1>
-        <p className="leading-6 tracking-wider mt-7 text-md text-slate-400">
+        <p className="text-sm leading-6 tracking-wider font-poppins mt-7 text-slate-300">
           Hi my name is Rex Randy Hernandez. My hobby is bringing up the
           concepts and ideas of coding to a desirable output that can be
           benificial for businesses for managing and structuring their datas. I
@@ -35,7 +35,7 @@ const Hero = (props: Props) => {
 
         <div className="flex justify-start gap-5 py-8">
           <CustomButton className="flex items-center" variant="gradient">
-            About Me&nbsp;
+            About me&nbsp;
             <span className="animate-bounce">
               <BiSolidDownArrowAlt size={32} />
             </span>
@@ -44,7 +44,7 @@ const Hero = (props: Props) => {
         </div>
 
         {/* ** Skills *** */}
-        <div className="flex flex-col items-center py-4 border-t mt-7 border-slate-600">
+        {/* <div className="flex flex-col items-center py-4 border-t mt-7 border-slate-600">
           <p className="text-2xl font-semibold tracking-widest text-white my-9 font-poppins">
             Skills
           </p>
@@ -72,9 +72,9 @@ const Hero = (props: Props) => {
             </li>
           </ul>
           
-        </div>
+        </div> */}
       </div>
-      <div className="flex-1 hidden w-1/2 border border-white h-1/2 md:block">
+      <div className="flex-1 hidden md:block">
         <BgAnimation />
       </div>
     </section>

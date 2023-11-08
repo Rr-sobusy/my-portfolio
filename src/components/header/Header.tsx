@@ -26,7 +26,7 @@ const Header = (props: Props) => {
   return (
     <header
       className={`h-[80px] z-40 bg-[var(--bg-primary)] ${
-        !isScrolled ? "border-slate-700 border-b" : "border-b-0"
+        !isScrolled ? "border-slate-700 border-b opacity-90" : "border-b-0"
       } fixed top-0 left-[50%] -translate-x-1/2 w-full`}
     >
       <div className="flex items-center justify-between h-full mx-5 lg:mx-[3rem]">

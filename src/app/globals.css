@@ -30,3 +30,4 @@ body {
 .__gradient-text {
   @apply bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] bg-clip-text text-transparent
 }
+
