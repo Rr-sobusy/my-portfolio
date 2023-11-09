@@ -9,7 +9,7 @@ const Header = (props: Props) => {
   const [isScrolled, setScrolled] = React.useState<boolean>(false);
 
   /**
-   * * Event listener for scroll position
+   * * Header opacity becomes 90 when scroll position reach > 80 and add border in the btm
    */
   React.useEffect(() => {
     window.addEventListener("scroll", () => {

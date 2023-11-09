@@ -25,7 +25,7 @@ const Hero = (props: Props) => {
             repeat={Infinity}
           />
         </h1>
-        <p className="text-sm leading-6 tracking-wider font-poppins mt-7 text-slate-300">
+        <p className="text-[13px] leading-6 tracking-wider font-poppins mt-7 text-slate-300">
           Hi my name is Rex Randy Hernandez. My hobby is bringing up the
           concepts and ideas of coding to a desirable output that can be
           benificial for businesses for managing and structuring their datas. I
@@ -40,7 +40,11 @@ const Hero = (props: Props) => {
               <BiSolidDownArrowAlt size={32} />
             </span>
           </CustomButton>
-          <CustomButton variant="outlined"><a href="https://github.com/Rr-sobusy">Github Profile</a></CustomButton>
+          <CustomButton variant="outlined">
+            <a target="_blank" href="https://github.com/Rr-sobusy">
+              Github Profile
+            </a>
+          </CustomButton>
         </div>
 
         {/* ** Skills *** */}
