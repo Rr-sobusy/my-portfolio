@@ -3,7 +3,7 @@ import React from "react";
 import BgAnimation from "./BgAnimation";
 import { TypeAnimation } from "react-type-animation";
 import CustomButton from "@/app/common/CustomButton";
-import {BiSolidDownArrowAlt} from 'react-icons/bi'
+import { BiSolidDownArrowAlt } from "react-icons/bi";
 import Image from "next/image";
 
 type Props = {};
@@ -26,11 +26,11 @@ const Hero = (props: Props) => {
           />
         </h1>
         <p className="text-[13px] leading-6 tracking-wider font-poppins mt-7 text-slate-300">
-          Hi my name is Rex Randy Hernandez. My hobby is bringing up the
-          concepts and ideas of coding to a desirable output that can be
-          benificial for businesses for managing and structuring their datas. I
-          have a strong passion for creating a neat and readable sets of code
-          while following the principles of UI/UX design systems.
+          My hobby is bringing up the concepts and ideas of coding to a
+          desirable output that can be benificial for businesses for managing
+          and structuring their datas. I have a strong passion for creating a
+          neat and readable sets of code while following the principles of UI/UX
+          design systems.
         </p>
 
         <div className="flex justify-start gap-5 py-8">

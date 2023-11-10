@@ -5,7 +5,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section className="flex flex-col md:flex-row">
+    <section id="about" className="flex flex-col md:flex-row h-screen">
           <div className="flex items-center justify-center flex-1">
             <Image src="/icons/about.png" height={400} width={400} alt="" />
           </div>

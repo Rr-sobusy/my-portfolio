@@ -2,6 +2,7 @@
 
 import React from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
+import NavLink from "../NavLink/NavLink";
 
 type Props = {};
 
@@ -37,7 +38,7 @@ const Header = (props: Props) => {
           className={`gap-7 mr-2 text-white hidden md:flex text-xl font-semibold`}
         >
           <li className="__header-navs">Home</li>
-          <li className="__header-navs">About</li>
+          <NavLink offset={0} to="about" className="__header-navs">About</NavLink>
           <li className="__header-navs">Projects</li>
           <li className="__header-navs">About</li>
         </ul>
