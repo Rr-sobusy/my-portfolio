@@ -11,7 +11,7 @@ interface CustomButtonProps
 //* Button types
 const btnVariant = {
   gradient:
-    "bg-gradient-to-b from-[var(--gradient-from)] to-[var(--gradient-to)] text-white hover:shadow-[var(--gradient-from)] hover:shadow-lg",
+    "bg-gradient-to-b from-[var(--gradient-from)] to-[var(--gradient-to)] text-white hover:shadow-[var(--gradient-from)] hover:shadow-md",
   outlined:
     "border-[3px] border-white text-slate-200 hover:shadow-[#E9EBEC] hover:shadow-sm hover:text-black hover:bg-slate-300 duration-300",
 };

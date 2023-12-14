@@ -10,9 +10,9 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="flex flex-col lg:flex-row">
+    <section id="home" className="flex flex-col lg:flex-row">
       <div className="flex flex-col justify-center flex-1 mt-[4.5rem]">
-        <h1 className="lg:text-6xl -mt-[5rem] text-4xl text-slate-200 font-poppins font-semibold leading-snug tracking-wider max-w-full lg:max-w-[650px]">
+        <h1 className="lg:text-5xl -mt-[5rem] text-3xl text-slate-200 font-poppins font-semibold leading-snug tracking-wider max-w-full lg:max-w-[650px]">
           Hi I'm Rex Randy, an&nbsp;
           <span className="leading-snug tracking-wider __gradient-text">
             aspiring
@@ -46,37 +46,6 @@ const Hero = (props: Props) => {
             </a>
           </CustomButton>
         </div>
-
-        {/* ** Skills *** */}
-        {/* <div className="flex flex-col items-center py-4 border-t mt-7 border-slate-600">
-          <p className="text-2xl font-semibold tracking-widest text-white my-9 font-poppins">
-            Skills
-          </p>
-
-          <ul className="grid grid-cols-2 gap-5 md:grid-cols-3 xl:grid-cols-5">
-            <li className="flex flex-col items-center justify-between gap-4 px-5 py-3 tracking-wider bg-gray-700 text-md font-poppins text-slate-200 rounded-xl">
-              <Image src="/stacks/react2.svg" width={50} height={50} alt="" />
-              <p className="font-poppins overflow-clip text-slate-300">ReactJs</p>
-            </li>
-            <li className="flex flex-col items-center justify-between gap-4 px-5 py-3 tracking-wider bg-gray-700 text-md font-poppins text-slate-200 rounded-xl">
-              <Image src="/stacks/tw.svg" width={50} height={50} alt="" />
-              <p className="font-poppins overflow-clip text-slate-300">Tailwind css</p>
-            </li>
-            <li className="flex flex-col items-center justify-between gap-4 px-5 py-3 tracking-wider bg-gray-700 text-md font-poppins text-slate-200 rounded-xl">
-              <Image src="/stacks/psql.svg" width={50} height={50} alt="" />
-              <p className="font-poppins overflow-clip text-slate-300">Postgresql</p>
-            </li>
-            <li className="flex flex-col items-center justify-between gap-4 px-5 py-3 tracking-wider bg-gray-700 text-md font-poppins text-slate-200 rounded-xl">
-              <Image src="/stacks/Nest.js.svg" width={50} height={50} alt="" />
-              <p className="font-poppins overflow-clip text-slate-300">NestJs</p>
-            </li>
-            <li className="flex flex-col items-center justify-between gap-4 px-5 py-3 tracking-wider bg-gray-700 text-md font-poppins text-slate-200 rounded-xl">
-              <Image src="/stacks/next.svg" width={50} height={50} alt="" />
-              <p className="font-poppins overflow-clip text-slate-300">Nextjs</p>
-            </li>
-          </ul>
-          
-        </div> */}
       </div>
       <div className="flex-1 hidden md:block">
         <BgAnimation />

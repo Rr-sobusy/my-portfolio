@@ -16,7 +16,7 @@ body {
 }
 
 .__header-navs {
-  @apply relative cursor-pointer text-slate-200 font-poppins text-lg tracking-[3px] font-extralight
+  @apply relative cursor-pointer text-slate-200 font-poppins text-base tracking-[3px] font-extralight
 }
 
 .__header-navs::after {

@@ -37,8 +37,8 @@ const Header = (props: Props) => {
         <ul
           className={`gap-7 mr-2 text-white hidden md:flex text-xl font-semibold`}
         >
-          <li className="__header-navs">Home</li>
-          <NavLink offset={0} to="about" className="__header-navs">About</NavLink>
+           <NavLink offset={-70} to="home" className="__header-navs">Home</NavLink>
+          <NavLink offset={-70} to="about" className="__header-navs">About</NavLink>
           <li className="__header-navs">Projects</li>
           <li className="__header-navs">About</li>
         </ul>
