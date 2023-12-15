@@ -10,8 +10,8 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section id="home" className="flex flex-col lg:flex-row">
-      <div className="flex flex-col justify-center flex-1 mt-[4.5rem]">
+    <section id="home" className="flex flex-col lg:flex-row mx-4">
+      <div className="flex flex-col justify-center flex-1 md:mt-[4.5rem] mt-[6.5rem]">
         <h1 className="lg:text-5xl -mt-[5rem] text-3xl text-slate-200 font-poppins font-semibold leading-snug tracking-wider max-w-full lg:max-w-[650px]">
           Hi I'm Rex Randy, an&nbsp;
           <span className="leading-snug tracking-wider __gradient-text">
@@ -35,7 +35,7 @@ const Hero = (props: Props) => {
 
         <div className="flex justify-start gap-5 py-8">
           <CustomButton className="flex items-center" variant="gradient">
-            About me&nbsp;
+            Download C.V&nbsp;
             <span className="animate-bounce">
               <BiSolidDownArrowAlt size={32} />
             </span>
@@ -47,7 +47,7 @@ const Hero = (props: Props) => {
           </CustomButton>
         </div>
       </div>
-      <div className="flex-1 hidden md:block">
+      <div className="flex-1 hidden lg:block">
         <BgAnimation />
       </div>
     </section>
