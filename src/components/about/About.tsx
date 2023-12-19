@@ -11,7 +11,7 @@ const About = (props: Props) => {
           </div>
           <div className="flex-1 border border-white">
             <h1 className="w-full text-4xl font-bold tracking-wider text-center __sample-text text-slate-100 font-poppins">
-              Who is he?
+              About
             </h1>
             <p className="text-slate-200">
               rex
