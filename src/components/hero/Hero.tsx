@@ -13,7 +13,7 @@ const Hero = (props: Props) => {
     <section id="home" className="flex flex-col lg:flex-row mx-4">
       <div className="flex flex-col justify-center flex-1 md:mt-[4.5rem] mt-[6.5rem]">
         <h1 className="lg:text-5xl -mt-[5rem] text-3xl text-slate-200 font-poppins font-semibold leading-snug tracking-wider max-w-full lg:max-w-[650px]">
-          Hi I'm Rex Randy, an&nbsp;
+          Hi I&apos;m Rex Randy, an&nbsp;
           <span className="leading-snug tracking-wider __gradient-text">
             aspiring
           </span>
