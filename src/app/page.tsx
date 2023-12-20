@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Image from "next/image";
 import { Header, About } from "@/components";
 import dynamic from "next/dynamic";
