@@ -30,7 +30,7 @@ const Header = (props: Props) => {
         !isScrolled ? "border-slate-700 border-b opacity-90" : "border-b-0"
       } fixed top-0 left-[50%] -translate-x-1/2 w-full`}
     >
-      <div className="flex items-center justify-between h-full mx-5 lg:mx-[3rem]">
+      <div className="flex items-center justify-between h-full mx-5 lg:mx-[5rem]">
         <h1 className="bg-clip-text bg-gradient-to-r text-transparent from-[#CB69C1] text-4xl md:text-5xl font-bold to-[#6C72CB]">
           rex.dev
         </h1>

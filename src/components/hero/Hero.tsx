@@ -4,11 +4,18 @@ import BgAnimation from "./BgAnimation";
 import { TypeAnimation } from "react-type-animation";
 import CustomButton from "@/app/common/CustomButton";
 import { BiSolidDownArrowAlt } from "react-icons/bi";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Hero = () => {
+  React.useEffect(()=>{
+    AOS.init({
+      duration: 800,
+      once: true,
+    })
+  },[])
   return (
-    <section id="home" className="flex flex-col lg:flex-row mx-4">
+    <section data-aos="fade-right" id="home" className="flex flex-col lg:flex-row mx-4">
       <div className="flex flex-col justify-center flex-1 md:mt-[4.5rem] mt-[9.5rem]">
         <h1 className="lg:text-5xl -mt-[5rem] text-[2.05rem] text-slate-200 font-poppins font-semibold leading-snug tracking-wider max-w-[400px] lg:max-w-[650px]">
           Hi I&apos;m Rex Randy, an&nbsp;
