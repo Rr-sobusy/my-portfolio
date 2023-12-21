@@ -31,3 +31,10 @@ body {
   @apply bg-gradient-to-r from-[var(--gradient-from)] to-[var(--gradient-to)] bg-clip-text text-transparent
 }
 
+#projects > h1 {
+  @apply relative mt-2 mx-2 
+}
+
+#projects > h1::after {
+  @apply absolute content-[''] left-[10.25rem] top-[50%] right-[50%] border-[.120rem] border-slate-100
+}

@@ -9,7 +9,7 @@ const About = (props: Props) => {
           <div className="flex items-center justify-center flex-1">
             <Image src="/icons/about.png" height={400} width={400} alt="" />
           </div>
-          <div className="flex-1 border border-white">
+          <div className="flex-1">
             <h1 className="w-full text-4xl font-bold tracking-wider text-center __sample-text text-slate-100 font-poppins">
               About
             </h1>

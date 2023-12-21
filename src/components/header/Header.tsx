@@ -39,7 +39,7 @@ const Header = (props: Props) => {
         >
            <NavLink offset={-80} to="home" className="__header-navs">Home</NavLink>
           <NavLink offset={-80} to="about" className="__header-navs">About</NavLink>
-          <li className="__header-navs">Projects</li>
+          <NavLink offset={-90} to="projects" className="__header-navs">Projects</NavLink>
           <li className="__header-navs">About</li>
         </ul>
         <HiMenuAlt1
