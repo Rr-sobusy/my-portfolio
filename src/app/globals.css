@@ -32,9 +32,32 @@ body {
 }
 
 #projects > h1 {
-  @apply relative mt-2 mx-2 
+  @apply relative mt-2 mx-4 
 }
 
 #projects > h1::after {
-  @apply absolute content-[''] left-[10.25rem] top-[50%] right-[50%] border-[.120rem] border-slate-100
+  @apply absolute content-[''] left-[10.25rem] top-[50%] right-0 md:right-[60%] border-[.120rem] border-slate-100
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: black;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
