@@ -3,17 +3,14 @@
 import React, { FC } from "react";
 
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import "swiper/css";
-
-import { Navigation, Pagination } from "swiper/modules";
-
-
-function SlideNextButton() {
-    const swiper = useSwiper(); 
-    return (
-      <button onClick={() => swiper.slideNext()}>Slide to the next slide</button>
-    );
-  }
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+import Image from "next/image";
 
 
 type ProjectProps = {
@@ -22,37 +19,43 @@ type ProjectProps = {
 };
 
 const Project: FC<ProjectProps> = ({ title, description }) => {
-    const swiper= useSwiper()
+  const swiper = useSwiper()
   return (
-    <div className="flex px-5 py-[2rem] m-3  text-white rounded-xl  flex-col md:flex-row">
-      <div className="flex-1">
-        <h1 className="text-xl tracking-wide font-poppins text-slate-100 font-bold">
+    <div className="flex px-5 py-[2rem] m-3 bg-[#272727] text-white rounded-xl gap-3 flex-col md:flex-row">
+      <div className="flex-1 flex flex-col">
+        <h1 className="text-xl tracking-wide font-poppins mb-1 text-slate-100 font-bold">
           {title}
         </h1>
         <p className="text-slate-300 tracking-wide text-sm font-poppins">
           {description}
         </p>
       </div>
-      <div className="max-w-[50%]">
+      <div className="md:max-w-[50%] max-w-[80%] mx-auto">
         <Swiper
-          pagination={{
-            type: "progressbar",
-          }}
-          navigation={true}
-          className="mySwiper"
+          // install Swiper modules
+          className="w-full"
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          speed={1000}
+
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          <SwiperSlide>
+            <Image className="rounded-xl" alt="Image" width={100} height={800} src="/snapshot.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image className="rounded-xl" alt="Image" width={800} height={800} src="/snapshot.png" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image className="rounded-xl" alt="Image" width={800} height={800} src="/snapshot.png" />
+          </SwiperSlide>
+
+
+          ...
         </Swiper>
       </div>
-      <SlideNextButton />
+
     </div>
   );
 };
