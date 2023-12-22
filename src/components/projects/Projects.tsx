@@ -59,7 +59,7 @@ const Project: FC<ComponentType> = ({ project }) => {
             </p>
           ))}
         </div>
-        <a className="m-2 underline cursor-pointer text-slate-200 font-poppins">
+        <a target="_black" href={project.githubRepo} className="m-2 underline cursor-pointer text-slate-200 font-poppins">
           Github repo
         </a>
       </div>

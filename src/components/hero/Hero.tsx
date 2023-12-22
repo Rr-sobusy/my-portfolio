@@ -35,7 +35,7 @@ const Hero = () => {
             repeat={Infinity}
           />
         </h1>
-        <p className="text-[13px] leading-6 tracking-wider font-poppins text-slate-300">
+        <p className="text-[13px] lg:mt-1 leading-6 tracking-wider font-poppins text-slate-300">
           My hobby is bringing up the concepts and ideas of coding to a
           desirable output that can be benificial for businesses for managing
           and structuring their datas. I have a strong passion for creating a
