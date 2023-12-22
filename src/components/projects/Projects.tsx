@@ -40,7 +40,7 @@ const Project: FC<ComponentType> = ({ project }) => {
   return (
     <div
       data-aos="fade-left"
-      className="flex px-8 py-[2.5rem] m-3  text-white rounded-xl gap-3 flex-col md:flex-row"
+      className="flex px-8 py-[2.5rem] m-3 bg-[#272727] text-white rounded-xl gap-3 flex-col md:flex-row"
     >
       <div className="flex flex-col flex-1">
         <h1 className="mb-1 text-xl font-bold tracking-wide font-poppins text-slate-100">
@@ -49,7 +49,7 @@ const Project: FC<ComponentType> = ({ project }) => {
         <p className="text-sm tracking-wide text-slate-300 font-poppins">
           {project.description}
         </p>
-        <div className="grid w-[70%] md:w-[90%] grid-cols-2 md:grid-cols-3 gap-2 mt-2">
+        <div className="grid w-full md:w-[90%] grid-cols-2 md:grid-cols-3 gap-2 mt-2">
           {project.stacks.map((stack, index) => (
             <p
               key={index}

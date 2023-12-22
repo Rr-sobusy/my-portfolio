@@ -15,22 +15,27 @@ const Hero = () => {
     })
   },[])
   return (
-    <section data-aos="fade-right" id="home" className="flex flex-col lg:flex-row mx-4">
+    <section
+      data-aos="fade-right"
+      id="home"
+      className="flex flex-col mx-4 lg:flex-row"
+    >
       <div className="flex flex-col justify-center flex-1 md:mt-[4.5rem] mt-[9.5rem]">
-        <h1 className="lg:text-5xl -mt-[5rem] text-[2.05rem] text-slate-200 font-poppins font-semibold leading-snug tracking-wider max-w-[400px] lg:max-w-[650px]">
+        <h1 className="lg:text-5xl min-h-[140px] lg:min-h-[165px] -mt-[5rem] text-[2.05rem] text-slate-200 font-poppins font-semibold leading-snug tracking-wider max-w-[400px] lg:max-w-[650px]">
           Hi I&apos;m Rex Randy, an&nbsp;
           <span className="leading-snug tracking-wider __gradient-text">
             aspiring
           </span>
           &nbsp;
           <TypeAnimation
+            style={{ whiteSpace: "pre-line", height: '300px'}}
             sequence={["Fullstack Developer.", 2000, "Tech Enthusiast.", 2000]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
           />
         </h1>
-        <p className="text-[13px] leading-6 tracking-wider font-poppins mt-7 text-slate-300">
+        <p className="text-[13px] leading-6 tracking-wider font-poppins text-slate-300">
           My hobby is bringing up the concepts and ideas of coding to a
           desirable output that can be benificial for businesses for managing
           and structuring their datas. I have a strong passion for creating a
