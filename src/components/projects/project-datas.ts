@@ -4,7 +4,7 @@ export const projectDetailDatas: ProjectTypes[] = [
   {
     title: "my.pokedex",
     description:
-      "My.pokedex is an app built using Nextjs on top of React and Tailwindcss. It fetches all known pokemons depends on what generation they belong with.",
+      "My.pokedex is an app built using Nextjs on top of React and Tailwindcss. It fetches all known pokemon depends on what generation they belong with.",
     imagesSrc: [
       "/projects/my.pokedex/snapshot.png",
       "/projects/my.pokedex/about.png",
@@ -26,15 +26,31 @@ export const projectDetailDatas: ProjectTypes[] = [
       "/projects/nfic/sales.png",
       "/projects/nfic/add_sales.png",
       "/projects/nfic/production.png",
-
     ],
-    stacks: ["Nextjs", "Material U.I", "Nestjs", "Postgresql","Typeorm"],
+    stacks: ["Nextjs", "Material Ui", "Nestjs", "Postgresql", "Typeorm"],
     githubRepo: "https://github.com/Rr-sobusy/pokedex-v2",
   },
   {
-    title : "React Todo App",
-    description : 'Lorem Ispusjolanfasfojaif',
-    imagesSrc : ["/projects/todo/dark.png","/projects/todo/light.png","/projects/todo/add.png","/projects/todo/update.png"],
-    stacks : ["React T.S","Tailwindcss", "Headless U.I"]
-  }
+    title: "React Todo App",
+    description: "Lorem Ispusjolanfasfojaif",
+    imagesSrc: [
+      "/projects/todo/dark.png",
+      "/projects/todo/light.png",
+      "/projects/todo/add.png",
+      "/projects/todo/update.png",
+    ],
+    stacks: ["React T.S", "Tailwindcss", "Headless Ui"],
+  },
+  {
+    title: "Coursespace Landing Page",
+    description: "Lorem Ispusjolanfasfojaif",
+    imagesSrc: [
+      "/projects/coursespace/home.png",
+      "/projects/coursespace/courses.png",
+      "/projects/coursespace/learning.png",
+      "/projects/coursespace/mentors.png",
+      "/projects/coursespace/footer.png",
+    ],
+    stacks: ["NextJs", "Tailwindcss", "Headless Ui"],
+  },
 ];

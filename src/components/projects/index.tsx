@@ -11,7 +11,7 @@ const Projects = (props: Props) => {
       <h1 className="text-4xl font-bold tracking-wider text-slate-100 font-poppins">
         Projects
       </h1>
-      <div className="mt-[57px] lg:max-w-[950px] mx-auto flex flex-col gap-6">
+      <div className="mt-[57px] lg:max-w-[890px] mx-auto flex flex-col gap-2">
         {projectDetailDatas.map((project, index) => (
           <Project project={project} key={index} />
         ))}

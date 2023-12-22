@@ -11,11 +11,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "swiper/css/autoplay";
 
 const sliderSettings = {
   className: "w-full md:max-h-[230px] max-h-[190px]",
-  modules: [Navigation, Pagination, Scrollbar, Autoplay],
+  modules: [Navigation, Pagination, Scrollbar],
   spaceBetween: 50,
   slidesPerView: 1,
   navigation: true,
@@ -39,7 +38,9 @@ const Project: FC<ComponentType> = ({ project }) => {
   }, []);
   return (
     <div
-      data-aos="fade-left"
+    data-aos="zoom-in"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000"
       className="flex px-8 py-[2.5rem] m-3 bg-[#272727] text-white rounded-xl gap-3 flex-col md:flex-row"
     >
       <div className="flex flex-col flex-1">
