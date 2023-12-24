@@ -19,7 +19,6 @@ const sliderSettings = {
   slidesPerView: 1,
   navigation: true,
   pagination: true,
-  loop: true,
   speed: 1000,
 };
 
@@ -40,7 +39,7 @@ const Project: FC<ComponentType> = ({ project }) => {
     <div
     data-aos="zoom-in"
     data-aos-easing="ease-out-cubic"
-    data-aos-duration="1000"
+    data-aos-duration="2000"
       className="flex px-8 py-[2.5rem] m-3 bg-[#272727] text-white rounded-xl gap-3 flex-col md:flex-row"
     >
       <div className="flex flex-col flex-1">
@@ -64,7 +63,7 @@ const Project: FC<ComponentType> = ({ project }) => {
           Github repo
         </a>
       </div>
-      <div className="md:max-w-[50%] max-w-[95%] mx-auto">
+      <div className="md:max-w-[50%] h-[190px] md:h-[230px] max-w-[95%] mx-auto">
         {/* ***** Image Slider component****** */}
         <Swiper {...sliderSettings}>
           {project.imagesSrc.map((imgUrl, index) => (

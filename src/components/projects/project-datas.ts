@@ -18,7 +18,7 @@ export const projectDetailDatas: ProjectTypes[] = [
   {
     title: "NFIC Warehouse Management System",
     description:
-      "My.pokedex is an app built using Nextjs on top of React and Tailwindcss. It fetches all known pokemons depends on what generation they belong with.",
+      "NFIC Warhouse Management System is a Fullstack Web Application built using Nextjs in client-side and NestJs on server side with Postgresql as data storage. It is used as an in-house monitoring app to keep track of datas from a Feed processing plant.",
     imagesSrc: [
       "/projects/nfic/dashboard.png",
       "/projects/nfic/dashboard_2.png",
@@ -32,7 +32,7 @@ export const projectDetailDatas: ProjectTypes[] = [
   },
   {
     title: "React Todo App",
-    description: "Lorem Ispusjolanfasfojaif",
+    description: "React Todo App is a to-do list application. I built this practice project to explore about the use of custom hook and implementation of it with local-storage. ",
     imagesSrc: [
       "/projects/todo/dark.png",
       "/projects/todo/light.png",
