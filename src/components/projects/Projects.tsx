@@ -20,6 +20,7 @@ const sliderSettings = {
   navigation: true,
   pagination: true,
   speed: 1000,
+  loop: true,
 };
 
 import AOS from "aos";
@@ -39,7 +40,7 @@ const Project: FC<ComponentType> = ({ project }) => {
     <div
     data-aos="zoom-in"
     data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000"
+    data-aos-duration="1500"
       className="flex px-8 py-[2.5rem] m-3 bg-[#272727] text-white rounded-xl gap-3 flex-col md:flex-row"
     >
       <div className="flex flex-col flex-1">

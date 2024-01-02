@@ -17,6 +17,7 @@ const Hero = () => {
   return (
     <section
       data-aos="fade-right"
+      data-aos-duration="1500"
       id="home"
       className="flex flex-col mx-4 lg:flex-row"
     >

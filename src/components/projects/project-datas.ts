@@ -18,7 +18,7 @@ export const projectDetailDatas: ProjectTypes[] = [
   {
     title: "NFIC Warehouse Management System",
     description:
-      "NFIC Warhouse Management System is a Fullstack Web Application built using Nextjs in client-side and NestJs on server side with Postgresql as data storage. It is used as an in-house monitoring app to keep track of datas from a Feed processing plant.",
+      "NFIC Warehouse Management System is a Fullstack Web Application built using Nextjs in client-side and NestJs on server side with Postgresql as data storage. It is used as an in-house monitoring app to keep track of datas from a Feed processing plant such as the inbounding and outbounding of products in the warehouse.",
     imagesSrc: [
       "/projects/nfic/dashboard.png",
       "/projects/nfic/dashboard_2.png",
@@ -26,6 +26,7 @@ export const projectDetailDatas: ProjectTypes[] = [
       "/projects/nfic/sales.png",
       "/projects/nfic/add_sales.png",
       "/projects/nfic/production.png",
+      "/projects/nfic/erd.png",
     ],
     stacks: ["Nextjs", "Material Ui", "Nestjs", "Postgresql", "Typeorm"],
     githubRepo: "https://github.com/Rr-sobusy/pokedex-v2",
@@ -43,7 +44,7 @@ export const projectDetailDatas: ProjectTypes[] = [
   },
   {
     title: "Coursespace Landing Page",
-    description: "Lorem Ispusjolanfasfojaif",
+    description: "Coursespace ",
     imagesSrc: [
       "/projects/coursespace/home.png",
       "/projects/coursespace/courses.png",
