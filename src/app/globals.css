@@ -36,6 +36,6 @@ body {
 }
 
 #projects > h1::after {
-  @apply absolute content-[''] left-[10.25rem] top-[50%] right-0 md:right-[60%] border-[.120rem] border-slate-100
+  @apply absolute content-[''] left-[10.25rem] top-[50%] right-0 md:right-[60%] border-[.5px] border-slate-100
 }
 

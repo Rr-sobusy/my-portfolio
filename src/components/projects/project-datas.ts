@@ -33,7 +33,8 @@ export const projectDetailDatas: ProjectTypes[] = [
   },
   {
     title: "React Todo App",
-    description: "React Todo App is a to-do list application. I built this practice project to explore about the use of custom hook and implementation of it with local-storage. ",
+    description:
+      "React Todo App is a to-do list application. I built this practice project to explore about the use of custom hook and implementation of it with local-storage and React Context API. ",
     imagesSrc: [
       "/projects/todo/dark.png",
       "/projects/todo/light.png",
@@ -41,6 +42,7 @@ export const projectDetailDatas: ProjectTypes[] = [
       "/projects/todo/update.png",
     ],
     stacks: ["React T.S", "Tailwindcss", "Headless Ui"],
+    githubRepo: "https://github.com/Rr-sobusy/todo-app-v2",
   },
   {
     title: "Coursespace Landing Page",
